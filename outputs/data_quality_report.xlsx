@@ -1,0 +1,17 @@
+## Task 4: Duplicate Handling
+
+### Exact Duplicate Rows
+- Identified exact duplicate rows by comparing all columns.
+- Removed duplicate records while keeping one unique record.
+
+### Duplicate Order IDs
+- Checked for repeated order_id values.
+- Reviewed duplicate order_id records for conflicting information.
+- Records with conflicting values were flagged for review.
+- Conflicting records were not removed automatically.
+
+### Summary
+- Exact Duplicate Rows Found: X
+- Duplicate Order IDs Found: X
+- Records Removed: X
+- Records Flagged for Review: X
