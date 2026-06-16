@@ -1,0 +1,9 @@
+outputs/
+└── data_quality_report.xlsx
+    ├── Missing_Value_Summary
+    ├── Duplicate_Summary
+    ├── Invalid_Discount_Summary
+    ├── Date_Issue_Summary
+    ├── Order_Status_Issue_Summary
+    ├── Sales_Profit_Mismatch_Summary
+    └── Final_Record_Quality_Summary
