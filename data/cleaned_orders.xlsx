@@ -1,0 +1,25 @@
+## Text Field Cleaning
+
+Cleaned and standardized the following fields:
+
+- customer_name
+- segment
+- region
+- state
+- city
+- category
+- sub_category
+- ship_mode
+- payment_status
+- order_status
+
+Actions performed:
+- Removed leading and trailing spaces using TRIM()
+- Removed extra internal spaces
+- Standardized text casing using PROPER()
+- Removed unwanted special characters using SUBSTITUTE() and Find & Replace
+- Standardized inconsistent category and status names
+- Used Flash Fill where appropriate for pattern correction
+
+Result:
+All text fields were converted into a consistent and analysis-ready format.
