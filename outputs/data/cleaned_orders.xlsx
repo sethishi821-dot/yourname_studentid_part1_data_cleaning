@@ -1,0 +1,37 @@
+## Task 5: Business Rule Validation
+
+### Missing Region
+- Missing values in the region field were replaced with "Unknown".
+- All affected records were counted and reported in the data quality report.
+
+### Missing Ship Mode
+- Missing values in the ship_mode field were replaced with "Unknown".
+- All affected records were counted and reported in the data quality report.
+
+### Missing Discount
+- Missing discount values were replaced with 0 only when all related sales fields were valid.
+- Records that did not meet this condition were flagged for review.
+
+### Negative Discount
+- Records containing negative discount values were flagged as invalid.
+- No automatic correction was applied.
+
+### Discount Above Allowed Range
+- Discount values exceeding the allowed business range were flagged as invalid.
+- These records were included in the data quality report.
+
+### Cancelled Orders
+- Cancelled orders were retained in the dataset for record purposes.
+- They were excluded from completed sales calculations and summary reports.
+
+### Failed Payments
+- Orders with failed payment status were retained in the dataset.
+- They were excluded from completed sales calculations and summary reports.
+
+### Refunded Orders
+- Refunded orders were retained in the dataset.
+- A separate refund summary was created for reporting purposes.
+
+### Invalid Shipping Records
+- Records where ship_date was earlier than order_date were flagged as invalid shipping records.
+- These records were included in the data quality report.
